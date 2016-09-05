@@ -2,6 +2,7 @@
  * アングラーは使用するモジュールをimport文で定義するけど、定義した中で更に一つを指定する
  * 必要がある。
  **/
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -19,7 +20,7 @@ import { AppComponent } from './app.component';
     //アプリケーションが起動した時にアングラーが初期化処理すべき
     //ルートのコンポーネントを指定する
     bootstrap: [AppComponent]
-});
+})//!!セミコロンがあるとコンパイルが通らない
 
 
 export class AppModule {}

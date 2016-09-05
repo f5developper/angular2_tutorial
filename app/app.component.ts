@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
 	selector: 'my-app',
 	//このコンポーネントが何を表示するかを指定する
     template: '<h1>My First Angular 2 App</h1>'
-});
+})//!!セミコロンがあるとコンパイルが通らない
 
 /**
 * templateにデータバインドするための、プロパティを設けたり、
